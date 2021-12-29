@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
+/* font-family: 'Barlow', sans-serif;  */
+/* font-family: 'Barlow Condensed', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  outline: 1px solid black;
+  max-width: 100%;
+}
+
+.global-padding {
+  padding: 2rem 1.5rem;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .logo-nav > * {
+  outline: 1px solid black;
+} */
+
+.logo,
+.hamburger {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-nav a {
+  text-decoration: none;
+}
+
+.logo img,
+.hamburger img {
+  display: block;
+  width: 20px;
+}
+
+.hamburger {
+  border: none;
+  background: none;
+  cursor: pointer;
+  outline: none;
+  transition: 0.4s;
+}
+
+.isActive {
+  transform: rotate(180deg);
+}
