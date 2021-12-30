@@ -32,6 +32,13 @@ body::after {
   border-bottom-left-radius: 4rem;
 }
 
+h1,
+h2,
+h3,
+a {
+  font-family: "Barlow Condensed", sans-serif;
+}
+
 .container {
   /* outline: 1px solid black; */
   max-width: 100%;
@@ -44,21 +51,15 @@ body::after {
 .logo-nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
-
-/* .logo-nav > * {
-  outline: 1px solid black;
-} */
 
 .logo,
 .hamburger {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.logo-nav a {
-  text-decoration: none;
 }
 
 .logo img,
@@ -77,6 +78,49 @@ body::after {
 
 .isActive {
   transform: rotate(180deg);
+}
+
+.nav-links {
+  padding: 1.5rem 2rem;
+  width: 345px;
+  max-width: 88%;
+  background-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 15%);
+  margin: auto;
+  z-index: 1;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 0.2rem;
+}
+
+.nav-links a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--dark-blue);
+  font-weight: 600;
+  margin-bottom: 2rem;
+  width: 100%;
+  text-align: center;
+  display: block;
+  letter-spacing: 1px;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+#login::before {
+  content: "";
+  display: block;
+  border-top: 1.5px solid var(--grayish-blue);
+  margin-bottom: 1rem;
+}
+
+#login {
+  margin-bottom: 0;
+  color: var(--grayish-blue);
 }
 
 .hero-img {
