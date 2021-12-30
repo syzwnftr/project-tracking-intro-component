@@ -73,7 +73,7 @@ a {
   background: none;
   cursor: pointer;
   outline: none;
-  transition: 0.4s;
+  transition: transform 0.4s ease;
 }
 
 .isActive {
@@ -93,6 +93,11 @@ a {
   z-index: 1;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1);
   border-radius: 0.2rem;
+  transition: top 0.5s ease-in-out;
+}
+
+.display-none {
+  top: -300px;
 }
 
 .nav-links a {
