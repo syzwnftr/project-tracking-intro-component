@@ -23,7 +23,7 @@ body {
 body::after {
   content: "";
   width: 50%;
-  height: 50vh;
+  height: 60vh;
   background-color: var(--light-grayish-blue);
   position: absolute;
   top: 0;
@@ -33,7 +33,7 @@ body::after {
 }
 
 .container {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   max-width: 100%;
 }
 
@@ -77,4 +77,14 @@ body::after {
 
 .isActive {
   transform: rotate(180deg);
+}
+
+.hero-img {
+  margin-top: 3rem;
+}
+
+.img-devices {
+  display: block;
+  width: 100%;
+  transform: translateX(70px) scale(1.37);
 }
