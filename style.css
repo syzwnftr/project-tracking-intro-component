@@ -23,7 +23,7 @@ body {
 body::after {
   content: "";
   width: 50%;
-  height: 60vh;
+  height: 58vh;
   background-color: var(--light-grayish-blue);
   position: absolute;
   top: 0;
@@ -136,4 +136,33 @@ a {
   display: block;
   width: 100%;
   transform: translateX(70px) scale(1.37);
+  margin-bottom: 2rem;
+}
+
+.new-dash {
+  /* outline: 1px solid black; */
+  margin-top: 6.5rem;
+  display: flex;
+  align-items: center;
+  padding-top: 0;
+  padding-bottom: 0;
+  gap: 1rem;
+}
+
+.new {
+  outline: 1px solid black;
+  padding: 0.2rem 0.8rem;
+  border-radius: 0.8rem;
+  text-transform: uppercase;
+  background-color: var(--dark-blue);
+  color: white;
+  font-family: "Barlow Condensed", sans-serif;
+  font-size: 1rem;
+}
+
+.dash {
+  text-transform: uppercase;
+  font-family: "Barlow", sans-serif;
+  letter-spacing: 2px;
+  color: var(--grayish-blue);
 }
