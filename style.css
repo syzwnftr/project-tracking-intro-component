@@ -19,7 +19,7 @@
 body {
   position: relative;
   font-family: "Barlow", sans-serif;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 body::after {
@@ -45,6 +45,7 @@ button {
 .container {
   /* outline: 1px solid black; */
   max-width: 100%;
+  padding-bottom: 2rem;
 }
 
 .global-padding {
