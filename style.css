@@ -19,12 +19,13 @@
 body {
   position: relative;
   font-family: "Barlow", sans-serif;
+  overflow: hidden;
 }
 
 body::after {
   content: "";
   width: 50%;
-  height: 58vh;
+  height: 55vh;
   background-color: var(--light-grayish-blue);
   position: absolute;
   top: 0;
@@ -36,12 +37,13 @@ body::after {
 h1,
 h2,
 h3,
-a {
+a,
+button {
   font-family: "Barlow Condensed", sans-serif;
 }
 
 .container {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
   max-width: 100%;
 }
 
@@ -142,7 +144,7 @@ a {
 
 .new-dash {
   /* outline: 1px solid black; */
-  margin-top: 6.5rem;
+  margin-top: 6rem;
   display: flex;
   align-items: center;
   padding-top: 0;
@@ -177,7 +179,7 @@ a {
 }
 
 .hero-text {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
   text-transform: uppercase;
   line-height: 1;
   color: var(--dark-blue);
@@ -185,8 +187,43 @@ a {
 }
 
 .hero p {
-  color: var(--dark-blue);
+  color: var(--grayish-blue);
   font-size: 1.125rem;
   padding-right: 3rem;
   font-weight: 300;
+}
+
+.demo-preview {
+  /* outline: 1px solid black; */
+  margin-top: 2rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.btn-demo {
+  padding: 0.6rem 1rem;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  border-radius: 0.2rem;
+  font-weight: 700;
+  background-color: var(--red);
+  color: #fff;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: background-color 0.4s ease-in-out;
+}
+
+.btn-demo:hover {
+  background-color: hsla(0, 100%, 68%, 80%);
+}
+
+.demo-preview p {
+  text-transform: uppercase;
+  color: var(--grayish-blue);
+  font-size: 0.78rem;
+  letter-spacing: 2px;
 }
