@@ -272,7 +272,7 @@ button {
   .hero-img {
     flex-basis: 50%;
     order: 0;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
   }
 
   .content {
@@ -305,7 +305,7 @@ button {
   .logo-nav {
     padding-left: 5rem;
     padding-right: 5rem;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -313,12 +313,12 @@ button {
   }
 
   .logo-nav > * {
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
   }
 
   .nav-links {
     all: unset;
-    outline: 1px solid black;
+    /* outline: 1px solid black; */
   }
 
   .nav-links > * {
@@ -370,5 +370,15 @@ button {
 
   .hero-img {
     margin-top: 6rem;
+  }
+}
+
+@media (min-width: 1200px) {
+  .nav-links > * {
+    margin-right: 4rem;
+  }
+
+  .img-devices {
+    transform: translateX(125px) scale(1.3);
   }
 }
