@@ -188,7 +188,7 @@ button {
 }
 
 .hero p {
-  color: var(--grayish-blue);
+  color: var(--dark-blue);
   font-size: 1.125rem;
   padding-right: 3rem;
   font-weight: 300;
@@ -227,4 +227,28 @@ button {
   color: var(--grayish-blue);
   font-size: 0.78rem;
   letter-spacing: 2px;
+}
+
+@media (min-width: 460px) {
+  .img-devices {
+    transform: translateX(70px) scale(1.33);
+  }
+}
+
+@media (min-width: 550px) {
+  .img-devices {
+    transform: translateX(70px) scale(1.27);
+  }
+
+  .hero-text {
+    /* outline: 1px solid black; */
+    font-size: 2.5rem;
+    padding-right: 5rem;
+  }
+}
+
+@media (min-width: 650px) {
+  .img-devices {
+    transform: translateX(70px) scale(1.23);
+  }
 }
