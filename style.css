@@ -123,6 +123,10 @@ button {
   text-decoration: underline;
 }
 
+.dot {
+  display: none;
+}
+
 #login::before {
   content: "";
   display: block;
@@ -312,10 +316,6 @@ button {
     position: static;
   }
 
-  .logo-nav > * {
-    /* outline: 1px solid black; */
-  }
-
   .nav-links {
     all: unset;
     /* outline: 1px solid black; */
@@ -380,5 +380,23 @@ button {
 
   .img-devices {
     transform: translateX(125px) scale(1.3);
+  }
+}
+
+@media (min-width: 1440px) {
+  body::after {
+    height: 50vh;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  .hero-img {
+    margin-top: 5rem;
+  }
+
+  .img-devices {
+    transform: translateX(150px) scale(1.3);
   }
 }
