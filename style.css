@@ -46,6 +46,8 @@ button {
   /* outline: 1px solid black; */
   max-width: 100%;
   padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
 }
 
 .global-padding {
@@ -53,6 +55,7 @@ button {
 }
 
 .logo-nav {
+  order: -2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -133,6 +136,7 @@ button {
 }
 
 .hero-img {
+  order: -1;
   margin-top: 3rem;
 }
 
@@ -250,5 +254,121 @@ button {
 @media (min-width: 650px) {
   .img-devices {
     transform: translateX(70px) scale(1.23);
+  }
+}
+
+@media (min-width: 720px) {
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .logo-nav {
+    flex-basis: 100%;
+    order: 0;
+  }
+
+  .content,
+  .hero-img {
+    flex-basis: 50%;
+    order: 0;
+    outline: 1px solid black;
+  }
+
+  .content {
+    margin-top: 5rem;
+  }
+
+  .new-dash {
+    /* outline: 1px solid black; */
+    margin-top: 0;
+  }
+
+  .demo-preview {
+    margin-top: 3rem;
+  }
+
+  .hero-img {
+    margin-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .img-devices {
+    margin-bottom: 0;
+    transform: translateX(70px) scale(1.37);
+  }
+}
+
+@media (min-width: 860px) {
+  .logo-nav {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    outline: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: static;
+  }
+
+  .logo-nav > * {
+    outline: 1px solid black;
+  }
+
+  .nav-links {
+    all: unset;
+    outline: 1px solid black;
+  }
+
+  .nav-links > * {
+    margin-right: 2rem;
+  }
+
+  .nav-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-blue);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    width: 100%;
+    text-align: center;
+    display: inline;
+    letter-spacing: 1px;
+  }
+
+  #login::before {
+    content: ".";
+    display: inline;
+    border-top: none;
+    margin-bottom: 0;
+    margin-right: 2rem;
+    font-size: 2rem;
+    all: unset;
+  }
+
+  #login {
+    margin-bottom: 0;
+    margin-right: 0;
+    color: var(--grayish-blue);
+  }
+
+  .dot {
+    display: inline;
+    font-size: 2rem;
+    color: var(--grayish-blue);
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .content {
+    padding-left: 3rem;
+    margin-top: 6rem;
+  }
+
+  .hero-img {
+    margin-top: 6rem;
   }
 }
