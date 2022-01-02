@@ -243,10 +243,6 @@ button {
 }
 
 @media (min-width: 460px) {
-  body::after {
-    height: 70vh;
-  }
-
   .img-devices {
     width: 550px;
     margin-left: -0.3rem;
@@ -254,6 +250,10 @@ button {
 }
 
 @media (min-width: 520px) {
+  body::after {
+    height: 70vh;
+  }
+
   .img-devices {
     width: 650px;
     margin-left: -0.3rem;
@@ -267,6 +267,10 @@ button {
 }
 
 @media (min-width: 580px) {
+  body::after {
+    height: 72vh;
+  }
+
   .img-devices {
     width: 700px;
   }
@@ -278,6 +282,10 @@ button {
 }
 
 @media (min-width: 620px) {
+  body::after {
+    height: 78vh;
+  }
+
   .img-devices {
     width: 800px;
     margin-left: -0.8rem;
@@ -341,11 +349,14 @@ button {
   .logo-nav {
     padding-left: 5rem;
     padding-right: 5rem;
-    /* outline: 1px solid black; */
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: static;
+  }
+
+  .logo img {
+    width: 25px;
   }
 
   .nav-links {
