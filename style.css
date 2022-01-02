@@ -24,7 +24,7 @@ body {
 body::after {
   content: "";
   width: 50%;
-  height: 64vh;
+  height: 61vh;
   background-color: var(--light-grayish-blue);
   position: absolute;
   top: 0;
@@ -44,7 +44,7 @@ button {
 .container {
   /* outline: 1px solid black; */
   max-width: 100%;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
   display: flex;
   flex-direction: column;
   overflow-x: hidden;
@@ -140,20 +140,21 @@ button {
 }
 
 .hero-img {
+  /* outline: 1px solid black; */
   order: -1;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .img-devices {
   display: block;
   width: 520px;
   height: auto;
-  margin-bottom: 2rem;
   margin-left: -0.1rem;
 }
 
 .content {
-  outline: 1px solid black;
+  /* outline: 1px solid black; */
+  margin-top: 5rem;
 }
 
 .new-dash {
@@ -200,7 +201,7 @@ button {
 }
 
 .hero p {
-  color: var(--dark-blue);
+  color: var(--dark-grayish-blue);
   font-size: 1.125rem;
   padding-right: 3rem;
   font-weight: 300;
@@ -217,11 +218,11 @@ button {
 }
 
 .btn-demo {
-  padding: 0.6rem 1rem;
+  padding: 0.6rem 1.3rem;
   border: none;
   outline: none;
   text-transform: uppercase;
-  border-radius: 0.2rem;
+  border-radius: 0.4rem;
   font-weight: 700;
   background-color: var(--red);
   color: #fff;
@@ -237,7 +238,7 @@ button {
 .demo-preview p {
   text-transform: uppercase;
   color: var(--grayish-blue);
-  font-size: 0.78rem;
+  font-size: 0.77rem;
   letter-spacing: 2px;
 }
 
