@@ -19,13 +19,12 @@
 body {
   position: relative;
   font-family: "Barlow", sans-serif;
-  overflow-x: hidden;
 }
 
 body::after {
   content: "";
   width: 50%;
-  height: 55vh;
+  height: 64vh;
   background-color: var(--light-grayish-blue);
   position: absolute;
   top: 0;
@@ -48,6 +47,7 @@ button {
   padding-bottom: 2rem;
   display: flex;
   flex-direction: column;
+  overflow-x: hidden;
 }
 
 .global-padding {
@@ -146,14 +146,18 @@ button {
 
 .img-devices {
   display: block;
-  width: 100%;
-  transform: translateX(70px) scale(1.37);
+  width: 520px;
+  height: auto;
   margin-bottom: 2rem;
+  margin-left: -0.1rem;
+}
+
+.content {
+  outline: 1px solid black;
 }
 
 .new-dash {
   /* outline: 1px solid black; */
-  margin-top: 6rem;
   display: flex;
   align-items: center;
   padding-top: 0;
