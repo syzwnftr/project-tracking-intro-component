@@ -9,14 +9,12 @@ hamburger.addEventListener('click', function() {
         hamCloseIcon.src = './images/icon-close.svg';
         count = 1;
         navLinks.classList.remove('display-none');
-        console.log(count)
         return;
    }
     if(count === 1) {
         hamCloseIcon.src = './images/icon-hamburger.svg';
         count = 0;
         navLinks.classList.add('display-none');
-        console.log(count)
         return;
    }
 });
