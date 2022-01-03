@@ -1,6 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;700&display=swap");
-/* font-family: 'Barlow', sans-serif;  */
-/* font-family: 'Barlow Condensed', sans-serif; */
 
 :root {
   --red: hsl(0, 100%, 68%);
@@ -42,7 +40,6 @@ button {
 }
 
 .container {
-  /* outline: 1px solid black; */
   max-width: 100%;
   padding-bottom: 5rem;
   display: flex;
@@ -140,7 +137,6 @@ button {
 }
 
 .hero-img {
-  /* outline: 1px solid black; */
   order: -1;
   margin-top: 2rem;
 }
@@ -153,12 +149,10 @@ button {
 }
 
 .content {
-  /* outline: 1px solid black; */
   margin-top: 5rem;
 }
 
 .new-dash {
-  /* outline: 1px solid black; */
   display: flex;
   align-items: center;
   padding-top: 0;
@@ -167,7 +161,6 @@ button {
 }
 
 .new {
-  outline: 1px solid black;
   padding: 0.2rem 0.8rem;
   border-radius: 0.8rem;
   text-transform: uppercase;
@@ -186,7 +179,6 @@ button {
 }
 
 .hero {
-  /* outline: 1px solid black; */
   margin-top: 1rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -208,7 +200,6 @@ button {
 }
 
 .demo-preview {
-  /* outline: 1px solid black; */
   margin-top: 2rem;
   padding-top: 0;
   padding-bottom: 0;
@@ -260,7 +251,6 @@ button {
   }
 
   .hero-text {
-    /* outline: 1px solid black; */
     font-size: 2.5rem;
     padding-right: 5rem;
   }
@@ -276,7 +266,6 @@ button {
   }
 
   .hero-text {
-    /* outline: 1px solid black; */
     padding-right: 10rem;
   }
 }
@@ -311,7 +300,6 @@ button {
   .hero-img {
     flex-basis: 50%;
     order: 0;
-    /* outline: 1px solid black; */
   }
 
   .content {
@@ -319,7 +307,6 @@ button {
   }
 
   .new-dash {
-    /* outline: 1px solid black; */
     margin-top: 0;
   }
 
@@ -361,7 +348,6 @@ button {
 
   .nav-links {
     all: unset;
-    /* outline: 1px solid black; */
   }
 
   .nav-links > * {
